@@ -35,3 +35,7 @@ def stock_profit(prices):
                 max_profit = potential_profit
     return max_profit
 
+ex_prices = [7,1,5,3,6,4]
+
+print(stock_profit(ex_prices))
+# prints 5 (example one correct answer)

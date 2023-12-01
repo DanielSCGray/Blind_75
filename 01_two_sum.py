@@ -40,6 +40,7 @@ def two_sum(nums, target):
 nums_array = [3,8,4,22,0,12]
 
 print(two_sum(nums_array, 30))
+#prints [1, 3] for 8+22=30
 
 #improved solution will use a hashmap to track number-index info as key-value pairs for a runtime of O(n)
 
@@ -52,3 +53,6 @@ def hashed_two_sum(nums, target):
         else:
             nums_hash[nums[i]] = i
     return "no two numbers in this array can be combined to equal the target"
+
+print(hashed_two_sum(nums_array, 25))
+#prints [0, 3] for 3+22=25
